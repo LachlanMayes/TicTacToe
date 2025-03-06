@@ -15,8 +15,8 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version
 
-
+TicTacToe_automated:
       - name: Run tests
         run: Code.py tests/ -v
