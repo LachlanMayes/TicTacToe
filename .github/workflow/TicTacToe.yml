@@ -2,7 +2,6 @@ name: Tic-Tac-Toe Automation
 
 on:
   push:
-    branches: [TicTacToe_automated]
   pull_request:
   workflow_dispatch:
 
@@ -16,7 +15,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version:'3.11'
+          python-version: '3.11'
 
-      - name: Run tests
-        run: Code.py
+      - name: Run Tic-Tac-Toe game
+        run: python Code.py
